@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+body{
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+  color:snow;
+  user-select:none;
+}
+
+#container{
+  background-color:#22283150;
+  border-width: 5px;
+  border-color: #892CDC;
+  border-style: solid dashed;
+  border-radius: 10px;
+  margin: 2% 15%;
+}
+
+header{
+  text-align:center;
+}
+
+.group{
+  margin: 5% 10%;
+  display:flexbox;
+  font-weight:bold;
+}
+.group p{
+  margin-bottom:5px;
+}
+.group label{
+  font-weight:bold;
+  font-size:1.1em,
+}
+.group input{
+  border:2px dashed #FFFFFF;
+  background-color: transparent;
+  width:100%;
+  margin-top: 5px;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  padding:10px;
+}
+
+.group input:focus{
+  border-color:#C4FB00;
+}
+.group select{
+  border:2px dashed #FFFFFF;
+  background-color: transparent;
+  width:100%;
+  margin-top: 5px;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  padding:10px;
+}
+
+.weak{
+  color:#FFFFFF80;
+  font-size:small;
+}
+
+.radio-container{
+  display:flexbox;
+  justify-items:stretch;
+  text-align:center;
+}
+
+.radio-container input{
+  width:auto;
+}
+
+.rating-text{
+  text-align:center;
+}
+.checkbox-container{
+  display:flexbox;
+  
+  margin:1% 28%;
+
+}
+.checkbox-container input{
+ width:auto;
+}
+
+#comment-container{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  
+}
+#comment-box{
+  background-color: #FFFFFF00;
+  color: snow;
+  font-family: 'Montserrat', sans-serif;
+  text-align:justify;
+  width:100%;
+  padding:10px;
+  border:2px dashed white;
+  margin:auto;
+  margin-top:10px
+}
+
+.centered{
+  text-align:center;
+}
+
+.submit-button{
+  background-color:transparent;
+  color:snow;
+  border: 3px dashed #C4FB6D;
+  border-radius:5px;
+  width:100%;
+  height:70px;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 1%
+}
+
+.submit-button:hover{
+  background-color:#C4FB6D;
+  color:#892CDC;
+  cursor:pointer;
+}
+
+.submit-button:active{
+  border: 6px inset #C4FB6D
+}
+
+
+@media(max-width:1000px){
+  #container{
+    margin:auto;
+  }
+  .group{
+    display:flex;
+    flex-direction:column;
+    margin: 2%;
+    margin-top:2%;
+  }
+  .group input{
+    width:auto;
+  }
+  #comment-box{
+    margin:2% auto;
+    width:90%;
+  }
+}

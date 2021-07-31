@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <header>
+    <h1 id="title">JENRYKSTER SURVEY</h1>
+    <p id="description">Help me become a better developer</p>
+  </header>
+  <div id="container">
+    <form id="survey-form">
+      <div class="group">
+        <label class="name-form" id="name-label" for="name">NAME</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
+      </div>
+      <div class="group">
+        <label class="name-form" id="email-label" for="email">EMAIL</label>
+        <input type="email" name="email" id="email" placeholder="amazingemail@email.com" required>
+      </div>
+      <div class="group">
+        <label class="name-form" id="number-label" for="number">AGE <span class="weak">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="150" placeholder="18">
+      </div>
+      <div class="group">
+        <label class="name-form" id="fav-color-label" for="dropdown">WHAT IS YOUR FAVORITE COLOR</label>
+        <select id="dropdown" name="fav-color">
+          <option disabled selected value>COLOR</option>
+          <option value="purple">PURPLE</option>
+          <option value="black">BLACK</option>
+          <option value="green">GREEN</option>
+        </select>
+      </div>
+      <div class="group">
+        <p class="rating-text">RATE THIS SURVEY FROM 1-5</p>
+        <div class="radio-container">
+          <input type="radio" id="rating1" name="rating" value="1">
+          <label for="rating1">1</label>
+          <input type="radio" id="rating2" name="rating" value="2">
+          <label for="rating2">2</label>
+          <input type="radio" id="rating3" name="rating" value="3">
+          <label for="rating3">3</label>
+          <input type="radio" id="rating4" name="rating" value="4">
+          <label for="rating4">4</label>
+          <input type="radio" id="rating5" name="rating" value="5">
+          <label for="rating5">5</label>
+        </div>
+      </div>
+      <div class="group">
+        <p class="rating-text">CHECK ANY ISSUE WITH THIS SURVEY</p>
+        <div class="checkbox-container">
+          <div>
+            <input type="checkbox" id="issue1" name="ugly" value="1">
+            <label for="issue1">It's ugly</label>
+          </div>
+          <div>
+            <input type="checkbox" id="issue2" name="unresponsive" value="2">
+            <label for="issue2">It's unresponsive</label>
+          </div>
+          <div>
+            <input type="checkbox" id="issue3" name="data" value="3">
+            <label for="issue3">Actually don't send any data</label>
+          </div>
+        </div>
+      </div>
+      <div class="group" id="comment-container">
+        <label for="comment-box">Leave any comment bellow </label>
+
+        <textarea id="comment-box" name="comment" placeholder="Write your comments here..."></textarea>
+      </div>
+      <div class="group">
+        <button type="submit" id="submit" class="submit-button">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+
+</main>
+</body>
+</html>
